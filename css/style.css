@@ -26,11 +26,12 @@ background-color:white;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    display: flex;
+    display: block;
     align-items: center;
     color: black;
     padding: 20%;
     margin-bottom: 2%;
+
     }
 
 
@@ -138,8 +139,11 @@ section.gallery{
     .desc{
         font-size: 0.5em;
     }
-    .hero-image img{
-        height: 150%;
+    .hero-text p {
+        font-size: 0.7em;
+    }
+    .hero-text button{
+        font-size: 0.7em;
     }
 }
 #intro{
@@ -155,6 +159,6 @@ footer {
     background:teal;
     text-align: center;
   }
-#intro p{
+  #intro p {
     text-align: center;
-}
+  }
