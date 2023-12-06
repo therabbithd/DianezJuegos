@@ -7,31 +7,35 @@
 @font-face {
     font-family:titulo ;
     src: url(../font/neuropolitical\ rg.otf);
-    
 }
 @font-face {
     font-family: texto;
     src: url(../font/ubuntu-font-family-0.80/UbuntuMono-R.ttf);
 }
-
+#wrapper{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(226, 226, 226);
+    display:inline-block;   
+   }
 body{
-background-color:white;
+background-image:url(../IMG/matrix.gif);
   margin:auto;
   padding:5px;
 }
 .hero-image {
     background-image:url(../IMG/fondo.jpg);
     background-color:greenyellow;
-    height: 100%;
+    height: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    display: block;
+    display: flex;
     align-items: center;
     color: black;
     padding: 20%;
     margin-bottom: 2%;
-
     }
 
 
@@ -41,26 +45,26 @@ background-color:white;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: teal;
+        color: white;
+        width: 100%;
     }
 .hero-text p {
     font-family: texto;
-    font-size: 1em;
 }
 h1{
 font-family: titulo;
-text-shadow: 2px 2px 5px black;
-font-size: 3em; 
 }
-
-
+/*****************responsive*************/
+@media screen and (width<650px) {
+    #wrapper{width: 100%;}
+    
+}
 .gallery{
-    border: 1px solid; color: black;
+    border: 1px solid; color: gray;
     margin: 5px;
+    width: auto;;
     float:left;
     border-radius: 10%;
-    width: 20%;
-    margin-top: 20px;
 }
 
 .gallery img{
@@ -68,18 +72,16 @@ font-size: 3em;
     border: black;
     border-radius: 10%;
     display: block;
-    height: 20%;
 }
 .gallery:hover {
-    border: 2px solid;
-    
+    border: 1px solid;color: black ;
+    cursor: pointer;
 }
 .desc{
     text-align: center;
     font-weight: bold;
     font-family:texto;
-    height: 30%;
-
+    width:95%
 }
 
 .hero-text button {
@@ -90,8 +92,6 @@ font-size: 3em;
         color: black;
         background-color: #ddd;
         text-align: center;
-        display: flex;
-        margin: auto;
       }
 .hero-text button:hover {
 background-color: gray;
@@ -130,35 +130,3 @@ section.gallery{
     margin-left: 10%;
     margin-right: 10%;
 }
-/*****************responsive*************/
-@media screen and (width<650px) {
-    #wrapper{width: 100%;}
-    .hero-text h1 {
-        font-size: 1em;
-    }
-    .desc{
-        font-size: 0.5em;
-    }
-    .hero-text p {
-        font-size: 0.7em;
-    }
-    .hero-text button{
-        font-size: 0.7em;
-    }
-}
-#intro{
-    display: block;
-    margin: auto;
-}
-footer {
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:30px;
-    width:100%;
-    background:teal;
-    text-align: center;
-  }
-  #intro p {
-    text-align: center;
-  }
