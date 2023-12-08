@@ -6,20 +6,25 @@
     <title>DianezJuegos</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/6868177d-e31c-4bae-ac90-0dd82b055255-PhotoRoom.png-PhotoRoom.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/funciones.js"></script>
 </head>
 <body>
     <div id="wrapper">
+      <nav></nav>
         <section id="navbar">
-        <div class="nav_bar">
-            <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#games">Games</a></li>
-                <li><a href="#categorys">Categories</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-              </ul>
-        </div>
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#intro">About us</a>
+                <a href="#gallery"> Top videogames</a>
+                <a href="#categoria">Search your videogames</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
         </section>
+        <header>
         <section id="hero">
             <div class="hero-image">
                 <div class="hero-text">
@@ -29,32 +34,108 @@
                 </div>
             </div>
         </section>
+        <section id="intro">
+            <h1>About us</h1>
+            <div class="intro">
+            <img src="./IMG/intro.jpeg" alt="intro">
+            <h2>Welcome to DianezJuegos, the website where you can find the best browser games in Spanish. Here you can enjoy a wide variety of genres, from adventure and action to puzzles and strategy. All our games are free and can be played without downloading anything. You just need an internet connection and a compatible browser. Explore our catalog and discover the games that you like the most. Have fun with DianezJuegos!</h2>
+            </div>
+        </section>
+        </header>
         <section id="gallery">
+            <h1> Top Videogames</h1>
+            <div class="gridgallery">
             <div class="gallery">
-                <img src="./IMG/Captura de pantalla  .png" alt="3dt" width="315" height="315" >
-                <div class="desc">
-                    <h2>The game of the masive tuning</h2>
-                </div>
+                <img src="./IMG/Captura de pantalla  .png" alt="3dt" width="315" height="315"> 
+                    <h2 class="desc">The game of the masive tuning</h2>
             </div>
             <div class="gallery">
                 <img src="./IMG/gta.jpeg" alt="gta1" width="315" height="315" >
-                <div class="desc">
-                    <h2>The first game of this clasic saga</h2>
-                </div>
+                    <h2 class="desc">The first game of this clasic saga</h2>
             </div>
             <div class="gallery">
                 <img src="./IMG/galleta.png" alt="cookie clicker" width="315" height="315">
-                <div class="desc">
-                    <h2>An addictive game about cookies</h2>
-                </div> 
+                    <h2 class="desc">An addictive game about cookies</h2>
             </div>
             <div class="gallery">
                 <img src="./IMG/mario 2.jpeg" alt="mario bros" width="315" height="315">
-                <div class="desc">
-                    <h2>This game needs no description</h2>
-                </div>
+                    <h2 class="desc"> This game needs no description </h2>
+            
+            </div>
             </div>
             </section>
+            <section id="categoria">
+              <h1>Search your videogames</h1>
+              <div class="acordeon">
+                <details>
+                  <summary>Category</summary>
+                  <ul>
+                    <li>Action</li>
+                    <li>Plataformer</li>
+                    <li>Racing</li>
+                    <li>Clicker</li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Plataform</summary>
+                  <ul>
+                    <li>Browser</li>
+                    <li>Playstation 1</li>
+                    <li>NES</li>
+                    <li>Game boy</li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Difficulty</summary>
+                  <ul>
+                    <li>None</li>
+                    <li>Easy</li>
+                    <li>Hard</li>
+                    <li>Very Hard</li>
+                  </ul>
+              </div>
+            </section>
+            <section id="contact">
+              <div class="form">
+                <h1>Contact</h1>
+                <form action>
+
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <input type="text" id="Country" name="Country" placeholder="Your Country">
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+            </section>
+            <footer>
+              
+<div class="grid-container">
+  <div class="grid-item">Follow us</div>
+  <div class="grid-item"><a href="mailto:dianezjuegos@gmail.com">email</a></div>
+  <div class="grid-item"><a href="https://twitter.com/DianezGuil80896">Twitter</a> 
+  <a href="https://instagram.com"> Instagram </a>
+  <a href="https://youtube.com"> YouTube</a></div>
+  <div class="grid-item">Autor: Guillermo Diañez Gomez</div>
+</div>
+<div class="nav_texto">
+  <a href="#home" >Home</a>
+  <a href="#intro">About us</a>
+  <a href="#gallery"> Top videogames</a>
+  <a href="#categoria">Search your videogames</a>
+  <a href="#contact">Contact</a>
+</div>
+          </footer>
     </div>
+
 </body>
 </html>
