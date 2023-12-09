@@ -146,12 +146,11 @@ text-shadow:5px 5px red ;}
     border: solid 3px greenyellow;
     border-radius: 5px;
     margin:auto;
-    opacity: 0.8;
+    opacity: 0.7;
     color:#e7e7e7;
     width: 315px;
     position:relative;
     max-width:315px;
-    
 }
 .gallery img{
  display: block;
@@ -160,19 +159,27 @@ text-shadow:5px 5px red ;}
 }
 
 .gallery:hover {
-    border: 1px solid;color: black ;
+    border: 3px solid;color: black ;
     cursor: pointer;
+    opacity: 1;
+    transition-duration:0.2s;
 }
 .desc{
     font-family: texto;
     color: black;
     padding: 5%;
+    text-decoration: none;
 }
 #gallery h1{
     text-align: center;
 }
 #gallery{
     background-color: gray;
+
+}
+.gallery a{
+  text-decoration: none;
+  color: #000;
 }
 /***************************/
 /*****************responsive*************/
@@ -219,7 +226,9 @@ text-shadow:5px 5px red ;}
       .acordeon li{
         font-size: 15px;
       }
-      
+      .intro h2{
+        text-align: center;
+      }
     }
 /**************hero section*********************/    
     
