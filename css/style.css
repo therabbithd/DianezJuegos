@@ -139,7 +139,8 @@ text-shadow:5px 5px red ;}
 .gridgallery{
     display: grid;
     grid-template-columns: 50% 50%; 
-    gap: 10px
+    gap: 10px;
+    padding: 3%;  
 }
 .gallery{
     border: solid 3px greenyellow;
@@ -150,6 +151,7 @@ text-shadow:5px 5px red ;}
     width: 315px;
     position:relative;
     max-width:315px;
+    
 }
 .gallery img{
  display: block;
@@ -164,6 +166,7 @@ text-shadow:5px 5px red ;}
 .desc{
     font-family: texto;
     color: black;
+    padding: 5%;
 }
 #gallery h1{
     text-align: center;
@@ -209,12 +212,15 @@ text-shadow:5px 5px red ;}
        h1{
         font-size: 25px;
       }
+      .acordeon details{
+        width: 100%;
+        display: block;
+      }
       .acordeon li{
         font-size: 15px;
       }
+      
     }
-    
-    
 /**************hero section*********************/    
     
  
@@ -285,7 +291,7 @@ text-shadow:5px 5px red ;}
   #categoria {
     background-color: white;
   }
-  .acordeon{
+  .acordeon {
     width: 50%;
     margin: auto;
     color:black;
@@ -305,9 +311,10 @@ text-shadow:5px 5px red ;}
     text-align: left;
     margin-bottom: 5px;
     background-color:greenyellow;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: #000; 
+    margin-left: 0%;
+    margin-right: 0%;
+    color: #000;
+
   } 
   .acordeon li:hover{
     background-color: #04AA6D;
