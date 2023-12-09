@@ -172,6 +172,7 @@ text-shadow:5px 5px red ;}
 }
 #gallery h1{
     text-align: center;
+    padding-top: 5%;
 }
 #gallery{
     background-color: gray;
