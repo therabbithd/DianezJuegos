@@ -230,6 +230,9 @@ text-shadow:5px 5px red ;}
       .intro h2{
         text-align: center;
       }
+      .grid-item i{
+        font-size: 26px;
+      }
     }
 /**************hero section*********************/    
     
@@ -390,11 +393,13 @@ input[type=submit]:hover {
 .grid-item a{
   text-decoration: none;
   color: #000;
-
+  font-size: 40px;
 }
-.grid-item a:hover{
+.grid-item i:hover{
   background-color: rgb(62, 85, 28);
   cursor: pointer;
+  
+
 }
 .nav_texto{
   font-size: 30px;
