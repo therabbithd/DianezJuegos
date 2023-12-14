@@ -281,7 +281,7 @@ text-shadow:5px 5px red ;}
     color: black;
   }
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: grey;
     color: white;
   }
   .topnav .icon {
@@ -395,7 +395,7 @@ input[type=submit]:hover {
   color: #000;
   font-size: 40px;
 }
-.grid-item i:hover{
+.grid-item :hover{
   background-color: rgb(62, 85, 28);
   cursor: pointer;
   
