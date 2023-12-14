@@ -395,7 +395,7 @@ input[type=submit]:hover {
   color: #000;
   font-size: 40px;
 }
-.grid-item :hover{
+.grid-item i:hover{
   background-color: rgb(62, 85, 28);
   cursor: pointer;
   
